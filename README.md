@@ -1,8 +1,7 @@
 # TuiEditor::Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tui_editor/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is prepared to simplify the process of installation of tui-editor package.
+It includes bower_components directory taken from bower installation of tui-editor.
 
 ## Installation
 
@@ -38,6 +37,7 @@ Or install it yourself as:
 2. application.scss
 
 ```scss
+@import 'codemirror/lib/codemirror';
 @import 'highlightjs/styles/github';
 @import 'tui-editor/dist/tui-editor';
 @import 'tui-editor/dist/tui-editor-contents';
@@ -51,7 +51,7 @@ Or install it yourself as:
     $('#editSection').tuiEditor({
         initialEditType: 'markdown',
         previewStyle: 'vertical',
-        height: 300
+        height: 400
     });
 </script>
 ```
