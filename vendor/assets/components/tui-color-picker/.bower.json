@@ -1,0 +1,37 @@
+{
+  "name": "tui-color-picker",
+  "authors": [
+    "NHNent. FE Development Lab <dl_javascript@nhnent.com>"
+  ],
+  "main": [
+    "dist/tui-color-picker.js",
+    "dist/tui-color-picker.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "examples",
+    "src",
+    "test",
+    "jsdoc.conf.json",
+    "karma.conf.js",
+    "webpack.config.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "tui-code-snippet": "^1.2.5"
+  },
+  "homepage": "https://github.com/nhnent/tui.color-picker",
+  "version": "2.0.1",
+  "_release": "2.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.1",
+    "commit": "0e98a86c4b67305e0c2c89b7963c186a9e16d5b7"
+  },
+  "_source": "https://github.com/nhnent/tui.color-picker.git",
+  "_target": "^2.0.1",
+  "_originalSource": "tui-color-picker"
+}
