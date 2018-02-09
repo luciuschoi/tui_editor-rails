@@ -64,4 +64,4 @@ app/assets/stylesheets/application.scss 파일을 열고 다음과 같이 추가
 </script>
 ```
 
-![](assets/screen_capture.png)
+![](app/assets/images/screen_capture.png)
