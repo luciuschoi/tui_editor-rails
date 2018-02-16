@@ -169,6 +169,11 @@ $(document).on "turbolinks:load", ->
 
 ![](example/app/assets/images/screen_capture.png)
 
+Youtube screencast:
+
+[![](example/app/assets/images/tui_editor-rails-attach-form.png)](https://youtu.be/C16dX3lwBjA)
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
