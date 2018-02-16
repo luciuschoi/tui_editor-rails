@@ -1,4 +1,7 @@
-<%= form_with(model: post, local: true) do |form| %>
+<script src="/assets/tui-editor/dist/tui-editor-Editor.min"></script>
+<script src="/assets/tui-editor/dist/tui-editor-extScrollSync.min"></script>
+
+<%= form_with(model: post, local: true, id: 'post_form') do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,17 +14,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, 'data-editor': 'tui-editor' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, class: 'btn btn-primary' %>
+    <%= link_to 'Show', @post, class: 'btn btn-outline-primary' if @post.persisted? %>
+    <%= link_to 'Back', posts_path, class: 'btn btn-outline-primary' %>
   </div>
 <% end %>

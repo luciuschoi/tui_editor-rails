@@ -11,13 +11,16 @@
 // about supported directives.
 //
 //= require jquery/dist/jquery
+//= require rails-ujs
 //= require tui-code-snippet/dist/tui-code-snippet
 //= require markdown-it/dist/markdown-it
 //= require to-mark/dist/to-mark
 //= require codemirror/lib/codemirror
 //= require highlightjs/highlight.pack
 //= require squire-rte/build/squire
-//= require tui-editor/dist/tui-editor-Editor.min
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require init
+//= require app.tui_editor
+//= require app.tui_viewer
+//= require posts
